@@ -17,10 +17,11 @@ int main ()
     scanf("%i", &seg);
     
     if (seg > 60) {
-        min = min + (seg / 60);
+        min += (seg / 60);
+        seg = seg - 60;
     }
     else if(min > 60){
-        hora = hora + (min / 60);
+        hora += (min / 60);
     }
 
     for (hora, min, seg; seg--;){
